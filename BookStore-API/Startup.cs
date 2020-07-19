@@ -17,6 +17,8 @@ using System.Reflection;
 using System.IO;
 using BookStore_API.Conracts;
 using BookStore_API.Services;
+using BookStore_API.Mappings;
+using AutoMapper;
 
 namespace BookStore_API
 {
@@ -38,13 +40,15 @@ namespace BookStore_API
 			services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
 				.AddEntityFrameworkStores<ApplicationDbContext>();
 
-			services.AddCors(o=>
+			services.AddCors(o =>
 			{
 				o.AddPolicy("CorsPolicy",
 					builder => builder.AllowAnyOrigin()
 					.AllowAnyMethod()
 					.AllowAnyHeader());
 			});
+
+			services.AddAutoMapper(typeof(Maps));
 
 			services.AddSwaggerGen(c =>
 			{
