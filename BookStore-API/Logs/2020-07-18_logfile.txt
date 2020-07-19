@@ -1,0 +1,6 @@
+2020-07-18 00:00:26.9062 INFO Accessed Get and got a value
+2020-07-18 00:01:35.4592 INFO Accessed Get and got a value
+2020-07-18 00:02:22.3853 INFO Accessed Get and got a value
+2020-07-18 00:02:28.5398 INFO Accessed Get
+2020-07-18 00:02:48.5111 ERROR Error
+2020-07-18 00:04:36.4526 ERROR test param value
