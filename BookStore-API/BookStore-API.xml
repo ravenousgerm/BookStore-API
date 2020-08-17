@@ -4,6 +4,11 @@
         <name>BookStore-API</name>
     </assembly>
     <members>
+        <member name="T:BookStore_API.Controllers.AuthorsController">
+            <summary>
+            Endpoint used to interact witht he Authors in the book store's database
+            </summary>
+        </member>
         <member name="T:BookStore_API.Controllers.HomeController">
             <summary>
             Test Hemo Controller anananananan
